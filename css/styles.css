@@ -6,154 +6,327 @@
     --second-accent-color: #FE4610;
     --picture-background-color: #FFE1D8;
 }
+
 * {
     margin: 0;
     padding: 0;
 }
+
 body {
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
     font-size: 14px;
-    background-color: var(--main-background-color);
     color: var(--main-text-color);
+    background-color: var(--main-background-color);
 }
-.link {
+
+a {
     text-decoration: none;
 }
-.list {
+
+ul {
     list-style: none;
 }
+
 .button {
+    height: 48px;
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     cursor: pointer;
-    background-color: var(--second-accent-color);    
     color: var(--main-background-color);
+    background-color: var(--second-accent-color);    
     border-radius: 10px;
     border: none;
-    height: 48px;
 }
+
 .button:focus,
 .button:hover {
-    background-color: var(--main-background-color);
     color: var(--first-accent-color);
+    background-color: var(--main-background-color);
     border: 1px solid var(--first-accent-color);
 }
+
 /* ----------------------------------------------- */
+
 .header {
-    width: 1230px;
-    margin: 0 auto;
     display: flex;
-    line-height: 48px;
+    width: 1200px;
+    margin: 0 auto;
     margin-top: 24px;
+    padding: 0 15px;
+    line-height: 48px;
 }
 
 .header-logo {
     font-weight: 500;
     font-size: 24px;
     color: var(--first-accent-color);
-    margin-left: 15px;
 }
+
 .header-logo span {
     color: var(--title-color);
 }
+
 .header-list {
     display: flex;
-    padding: 0 40px 0 541px;
     width: 363px;
     justify-content: space-between;
+    padding: 0 40px 0 541px;
 }
+
 .header-item-link {
     font-size: 16px;
     color: var(--title-color);
 }
+
 .header-item-link:focus,
 .header-item-link:hover {
     color: var(--first-accent-color);
 }
+
 .header-button {
     width: 137px;
-    margin-right: 15px;
 }
+
 /* ----------------------------------------------- */
+
 .main {
     width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
+
 .hero {
 }
 .hero-container {
+    display: flex;
+    justify-content: space-between;
 }
 .hero-text-container {
+    width: 410px;
+    margin-top: 100px;
 }
+
 .hero-title {
+    padding-bottom: 16px;
     font-size: 48px;
+    font-weight: 500;
     line-height: 1.33;
     color: var(--title-color);
 }
+
 .hero-text {
+    padding-bottom: 32px;
     line-height: 2.29;
 }
+
 .hero-button-container {
+
 }
+
 .first-hero-button {
     width: 168px;
+    margin-right: 16px;
 }
+
 .button {
 }
+
 .second-hero-button {
     width: 142px;
-    background-color: var(--main-background-color);
+    margin-left: 0;
     color: var(--first-accent-color);
+    background-color: var(--main-background-color);
     border: 1px solid var(--first-accent-color);
 }
+
 .second-hero-button:focus,
-.second-hero-button:hover {
-    background-color: var(--second-accent-color);    
+.second-hero-button:hover {   
     color: var(--main-background-color);
+    background-color: var(--second-accent-color); 
 }
+
 .first-hero-image-container {
+    position: relative;
     width: 571px;
     height: 382px;
+    margin-top: 81px;
+    margin-bottom: 46px;
+}
+
+.first-image::before,
+.second-image::before,
+.third-image::before,
+.fourth-image::before,
+.fifth-image::before {
+    position: absolute;
+    content: "";
+    width: 177px;
+    height: 181px;
     background-color: var(--picture-background-color);
+    border-radius: 10px;
 }
+
+.second-image::before {
+    left: 199px;
+}
+
+.third-image::before {
+    top: 201px;
+}
+
+.fourth-image::before {
+    top: 201px;
+    left: 199px;
+}
+
+.fifth-image::before {
+    left: 398px;
+    height: 382px;
+}
+
 .second-hero-container {
+    display: flex;
+    justify-content: space-between;
 }
+
 .first-hero-list {
+    display: flex;
+    width: 767px;
+    justify-content: space-between;
 }
-.list {
-}
+
 .first-hero-item {
+    height: 83px;
+    width: 245px;
+    padding-top: 30px;
+    box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
 }
+.first-hero-item:focus,
+.first-hero-item:hover {
+    height: 147px;
+}
+.first-hero-item:focus, .first-hero-item-button,
+.first-hero-item:hover .first-hero-item-button{
+    display: block;
+}
+
 .first-hero-item-title {
+    padding-left: 111px;
     font-weight: 500;
     font-size: 18px;
     color: var(--title-color);
 }
+
 .first-hero-item-text {
+    width: 101px;
+    padding: 10px 0 24px 111px;
     font-size: 12px;
     line-height: 1.16;
 }
+
 .first-hero-item-button {
+    display: none;
     width: 123px;
     height: 40px;
+    margin-left: 52px;
     font-size: 14px;
-    border-radius: 30px;
-    border: 1px solid var(--first-accent-color);
-    background-color: var(--main-background-color);
     color: var(--first-accent-color);
+    background-color: var(--main-background-color);
+    border: 1px solid var(--first-accent-color);
+    border-radius: 30px;
 }
+
 .first-hero-item-button:focus,
 .first-hero-item-button:hover {
-    background-color: var(--second-accent-color);    
     color: var(--main-background-color);
+    background-color: var(--second-accent-color);    
 }
+
 .second-hero-image-container {
+    position: relative;
     width: 100px;
     height: 70px;
-    background-color: var(--picture-background-color);
+    margin-top: 78px;
+    margin-right: 35px;
 }
+
+.one-image::before,
+.two-image::before,
+.three-image::before,
+.four-image::before,
+.five-image::before,
+.six-image::before,
+.seven-image::before,
+.eigth-image::before,
+.nine-image::before,
+.ten-image::before,
+.eleven-image::before,
+.twelve-image::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: var(--picture-background-color);
+    border-radius: 10px;
+}
+
+.two-image::before {
+    left: 30px;
+}
+
+.three-image::before {
+    left: 60px;
+}
+
+.four-image::before {
+    left: 90px;
+}
+
+.five-image::before {
+    top: 30px;
+}
+
+.six-image::before {
+    top: 30px;
+    left: 30px;
+}
+
+.seven-image::before {
+    top: 30px;
+    left: 60px;
+}
+
+.eigth-image::before {
+    top: 30px;
+    left: 90px;
+}
+
+.nine-image::before {
+    top: 60px;
+}
+
+.ten-image::before {
+    top: 60px;
+    left: 30px;
+}
+
+.eleven-image::before {
+    top: 60px;
+    left: 60px;
+}
+
+.twelve-image::before {
+    top: 60px;
+    left: 90px;
+}
+
 .second-hero-list {
+    margin-top: 79px;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
 }
 .second-hero-item {
 }
