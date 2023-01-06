@@ -60,7 +60,8 @@ ul {
     line-height: 48px;
 }
 
-.header-logo {
+.header-logo,
+.schedule-title {
     font-weight: 500;
     font-size: 24px;
     color: var(--first-accent-color);
@@ -101,8 +102,6 @@ ul {
     padding: 0 15px;
 }
 
-.hero {
-}
 .hero-container {
     display: flex;
     justify-content: space-between;
@@ -125,16 +124,9 @@ ul {
     line-height: 2.29;
 }
 
-.hero-button-container {
-
-}
-
 .first-hero-button {
     width: 168px;
     margin-right: 16px;
-}
-
-.button {
 }
 
 .second-hero-button {
@@ -206,7 +198,7 @@ ul {
 }
 
 .first-hero-item {
-    height: 83px;
+    height: 88px;
     width: 245px;
     padding-top: 30px;
     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);
@@ -215,7 +207,7 @@ ul {
 }
 .first-hero-item:focus,
 .first-hero-item:hover {
-    height: 147px;
+    height: 155px;
     transition: all 0.5s;
 }
 .first-hero-item:focus, .first-hero-item-button,
@@ -248,7 +240,6 @@ ul {
     background-color: var(--main-background-color);
     border: 1px solid var(--first-accent-color);
     border-radius: 30px;
-    transition: all 0.5s;
 }
 
 .first-hero-item-button:focus,
@@ -342,11 +333,69 @@ ul {
     gap: 60px;
     justify-content: center;
 }
-.second-hero-item {
-}
+
 .second-hero-text {
     font-family:'Mulish', sans-serif;
     font-weight: 600;
     font-size: 32px;
     line-height: 1.25;
+}
+
+/* ----------------------------------------------- */
+
+.schedule {
+
+}
+
+.schedule-title {
+    color: var(--title-color);
+}
+
+.schedule-block {
+    display: flex;
+    width: 1200px;
+    height: 140px;
+    padding: 0 24px;
+    justify-content: space-between;
+    box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    align-items: center;
+}
+
+.schedule-list {
+    display: flex;
+    gap: 57px;
+}
+
+.schedule-item {
+}
+
+.schedule-item-block {
+    display: flex;
+}
+
+.schedule-item-icon {
+    padding-left: 13px;
+}
+
+.schedule-item-title {
+    padding: 0 0 14px 29px;
+    font-size: 18px;
+    color: var(--title-color);
+}
+
+.schedule-item-input {
+    width: 225px;
+    height: 48px;
+    margin-left: 56px;
+    padding-left: 16px;
+    background-color: #fafafa;
+    border: none;
+    border-radius: 10px;
+}
+
+.schedule-button {
+}
+
+.button {
 }
