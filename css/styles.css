@@ -18,6 +18,7 @@ body {
     font-size: 14px;
     color: var(--main-text-color);
     background-color: var(--main-background-color);
+
 }
 
 a {
@@ -37,6 +38,7 @@ ul {
     background-color: var(--second-accent-color);    
     border-radius: 10px;
     border: none;
+    transition: all 0.5s;
 }
 
 .button:focus,
@@ -44,6 +46,7 @@ ul {
     color: var(--first-accent-color);
     background-color: var(--main-background-color);
     border: 1px solid var(--first-accent-color);
+    transition: all 0.5s;
 }
 
 /* ----------------------------------------------- */
@@ -77,11 +80,13 @@ ul {
 .header-item-link {
     font-size: 16px;
     color: var(--title-color);
+    transition: all 0.5s;
 }
 
 .header-item-link:focus,
 .header-item-link:hover {
     color: var(--first-accent-color);
+    transition: all 0.5s;
 }
 
 .header-button {
@@ -138,12 +143,14 @@ ul {
     color: var(--first-accent-color);
     background-color: var(--main-background-color);
     border: 1px solid var(--first-accent-color);
+    transition: all 0.5s;
 }
 
 .second-hero-button:focus,
 .second-hero-button:hover {   
     color: var(--main-background-color);
     background-color: var(--second-accent-color); 
+    transition: all 0.5s;
 }
 
 .first-hero-image-container {
@@ -194,6 +201,8 @@ ul {
     display: flex;
     width: 767px;
     justify-content: space-between;
+    align-items: flex-end;
+
 }
 
 .first-hero-item {
@@ -202,14 +211,17 @@ ul {
     padding-top: 30px;
     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);
     border-radius: 15px;
+    transition: all 0.5s;
 }
 .first-hero-item:focus,
 .first-hero-item:hover {
     height: 147px;
+    transition: all 0.5s;
 }
 .first-hero-item:focus, .first-hero-item-button,
 .first-hero-item:hover .first-hero-item-button{
     display: block;
+    transition: all 0.5s;
 }
 
 .first-hero-item-title {
@@ -236,12 +248,14 @@ ul {
     background-color: var(--main-background-color);
     border: 1px solid var(--first-accent-color);
     border-radius: 30px;
+    transition: all 0.5s;
 }
 
 .first-hero-item-button:focus,
 .first-hero-item-button:hover {
     color: var(--main-background-color);
-    background-color: var(--second-accent-color);    
+    background-color: var(--second-accent-color); 
+    transition: all 0.5s;   
 }
 
 .second-hero-image-container {
