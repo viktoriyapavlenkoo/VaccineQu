@@ -343,17 +343,15 @@ ul {
 
 /* ----------------------------------------------- */
 
-.schedule {
-
-}
-
 .schedule-title {
+    margin-top: 80px;
+    margin-bottom: 30px;
     color: var(--title-color);
 }
 
 .schedule-block {
+    /* position: relative; */
     display: flex;
-    width: 1200px;
     height: 140px;
     padding: 0 24px;
     justify-content: space-between;
@@ -368,14 +366,31 @@ ul {
 }
 
 .schedule-item {
+    position: relative;
 }
 
 .schedule-item-block {
+    align-items: flex-start;
     display: flex;
 }
 
 .schedule-item-icon {
+    padding-top: 2px;    
     padding-left: 13px;
+}
+
+.background-icon::before,
+.background-icon::before,
+.background-icon::before {
+    position: absolute;
+    top: -7px;
+    left: 0;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: var(--picture-background-color);
+    border-radius: 10px;
+    z-index: -1;
 }
 
 .schedule-item-title {
@@ -389,13 +404,19 @@ ul {
     height: 48px;
     margin-left: 56px;
     padding-left: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    color: var(--title-color);
     background-color: #fafafa;
+    box-sizing: border-box;
     border: none;
     border-radius: 10px;
 }
 
-.schedule-button {
+.schedule-item-input::placeholder {
+    color: #ABADAD;
 }
 
-.button {
+.schedule-button {
+    width: 137px;
 }
