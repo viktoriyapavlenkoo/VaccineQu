@@ -62,7 +62,8 @@ ul {
 
 .header-logo,
 .schedule-title,
-.importance-title {
+.importance-title,
+.quota-title {
     font-weight: 500;
     font-size: 24px;
     color: var(--first-accent-color);
@@ -398,7 +399,8 @@ ul {
     color: var(--title-color);
 }
 
-.schedule-item-input {
+.schedule-item-input,
+.quota-item-input {
     width: 225px;
     height: 48px;
     margin-left: 56px;
@@ -412,7 +414,8 @@ ul {
     border-radius: 10px;
 }
 
-.schedule-item-input::placeholder {
+.schedule-item-input::placeholder,
+.quota-item-input::placeholder {
     color: #ABADAD;
 }
 
@@ -472,4 +475,49 @@ ul {
 .importance-item-text {
     width: 200px;
     line-height: 1.71;
+}
+
+/* ----------------------------------------------- */
+
+.quota-title {
+    margin: 106px 0 16px ;
+    color: var(--title-color);
+}
+
+.quota-text {
+    width: 480px;
+    margin-bottom: 33px;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.quota-block {
+    padding: 33px 32px;
+    box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;    
+}
+
+.quota-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between; 
+}
+
+.quota-item-title {
+    padding-bottom: 14px;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--title-color);
+}
+
+.quota-item-input {
+    margin: 0 0 32px 0;
+    width: 370px;
+    height: 48px;
+}
+
+.quota-button {
+    display: block;
+    margin: 16px auto 12px;
+    width: 140px;
 }
