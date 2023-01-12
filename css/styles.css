@@ -29,7 +29,7 @@ ul {
     list-style: none;
 }
 
-.button {
+button {
     height: 48px;
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
@@ -41,8 +41,8 @@ ul {
     transition: all 0.5s;
 }
 
-.button:focus,
-.button:hover {
+button:focus,
+button:hover {
     color: var(--first-accent-color);
     background-color: var(--main-background-color);
     border: 1px solid var(--first-accent-color);
@@ -63,7 +63,8 @@ ul {
 .header-logo,
 .schedule-title,
 .importance-title,
-.quota-title {
+.quota-title,
+.information-title  {
     font-weight: 500;
     font-size: 24px;
     color: var(--first-accent-color);
@@ -484,9 +485,10 @@ ul {
     color: var(--title-color);
 }
 
-.quota-text {
+.quota-text,
+.information-text {
     width: 480px;
-    margin-bottom: 33px;
+    margin-bottom: 32px;
     font-size: 16px;
     line-height: 2;
 }
@@ -520,4 +522,86 @@ ul {
     display: block;
     margin: 16px auto 12px;
     width: 140px;
+}
+
+/* ----------------------------------------------- */
+
+.information {
+    display: flex;
+    gap: 116px;
+}
+
+.information-block-image {
+    width: 514px;
+    height: 400px;
+    margin-top: 113px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+.information-block-text {
+    margin: 80px 0;
+}
+
+.information-title {
+    margin-bottom: 31px;
+    color: var(--title-color);
+}
+
+.information-text {
+}
+
+.information-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.information-item {
+    position: relative;
+    display: flex;
+    padding: 24px 32px 17px 35px;
+    box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+}
+
+.information-item-block-image {
+}
+
+.information-icon {
+    padding-top: 12px;
+}
+
+.information-background-icon::before {
+    position: absolute;
+    top: 26px;
+    left: 24px;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: var(--picture-background-color);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.information-item-block-text {
+    width: 170px;
+    padding-left: 32px;
+}
+
+.information-item-title {
+    padding-bottom: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--title-color);
+}
+
+.information-item-text {
+    padding-bottom: 13px;
+    font-size: 16px;
+}
+
+.information-item-button {
+    width: 164px;
+    height: 41px;
 }
