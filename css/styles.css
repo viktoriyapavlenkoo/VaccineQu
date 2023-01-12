@@ -64,13 +64,15 @@ button:hover {
 .schedule-title,
 .importance-title,
 .quota-title,
-.information-title  {
+.information-title,
+.footer-logo  {
     font-weight: 500;
     font-size: 24px;
     color: var(--first-accent-color);
 }
 
-.header-logo span {
+.header-logo span,
+.footer-logo span {
     color: var(--title-color);
 }
 
@@ -548,9 +550,6 @@ button:hover {
     color: var(--title-color);
 }
 
-.information-text {
-}
-
 .information-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -563,9 +562,6 @@ button:hover {
     padding: 24px 32px 17px 35px;
     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);
     border-radius: 10px;
-}
-
-.information-item-block-image {
 }
 
 .information-icon {
@@ -604,4 +600,44 @@ button:hover {
 .information-item-button {
     width: 164px;
     height: 41px;
+}
+
+/* ----------------------------------------------- */
+
+.footer {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto 32px;
+    padding: 40px 15px;
+    gap: 130px;
+}
+
+.footer-logo-block {
+    width: 358px;
+}
+
+.footer-text {
+    padding-top: 16px;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.footer-list {
+    display: flex;
+    gap: 130px;
+}
+
+.footer-item-title {
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--title-color);
+}
+
+.footer-sub-item {
+    padding-top: 16px;
+}
+
+.footer-sub-item-link {
+    font-size: 16px;
+    color: var(--main-text-color);
 }
